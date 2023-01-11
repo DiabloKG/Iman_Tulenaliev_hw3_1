@@ -27,7 +27,7 @@ public class SecondActivity extends AppCompatActivity {
 
     private void clickListener() {
         button.setOnClickListener(view -> {
-            Transition();
+            transition();
         });
     }
 
@@ -36,7 +36,7 @@ public class SecondActivity extends AppCompatActivity {
         textView.setText("Hello " + nameFromActivity);
     }
 
-    private void Transition() {
+    private void transition() {
         Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
         startActivity(intent);
     }

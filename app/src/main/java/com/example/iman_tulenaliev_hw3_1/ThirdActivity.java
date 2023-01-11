@@ -24,11 +24,11 @@ public class ThirdActivity extends AppCompatActivity {
 
     private void clickListener() {
         button.setOnClickListener(view -> {
-            Transition();
+            transition();
         });
     }
 
-    private void Transition() {
+    private void transition() {
         Intent intent = new Intent(ThirdActivity.this, MainActivity.class);
         startActivity(intent);
     }

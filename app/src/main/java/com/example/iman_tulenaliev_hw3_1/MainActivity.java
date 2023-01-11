@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void clickListener() {
         button.setOnClickListener(view -> {
-            Transition();
+            transition();
         });
     }
 
-    private void Transition() {
+    private void transition() {
         Intent intent = new Intent(MainActivity.this, FirstActivity.class);
         startActivity(intent);
     }

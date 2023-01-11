@@ -27,11 +27,11 @@ public class FirstActivity extends AppCompatActivity {
 
     private void clickListener() {
         button.setOnClickListener(view -> {
-            Transition();
+            transition();
         });
     }
 
-    private void Transition() {
+    private void transition() {
         Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
         intent.putExtra("name", editText.getText().toString());
         startActivity(intent);
