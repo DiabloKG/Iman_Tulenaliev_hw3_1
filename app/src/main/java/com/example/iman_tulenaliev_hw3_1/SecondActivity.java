@@ -16,6 +16,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         findViewById();
+        setText();
         clickListener();
     }
 
@@ -30,9 +31,12 @@ public class SecondActivity extends AppCompatActivity {
         });
     }
 
-    private void Transition() {
+    private void setText() {
         String nameFromActivity = getIntent().getStringExtra("name");
-        textView.setText("Hello" + nameFromActivity);
+        textView.setText("Hello " + nameFromActivity);
+    }
+
+    private void Transition() {
         Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
         startActivity(intent);
     }

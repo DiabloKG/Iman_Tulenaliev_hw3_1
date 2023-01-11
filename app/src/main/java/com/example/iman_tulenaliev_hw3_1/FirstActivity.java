@@ -22,7 +22,7 @@ public class FirstActivity extends AppCompatActivity {
 
     private void findViewById() {
         button = findViewById(R.id.Button_firstActivity);
-        findViewById(R.id.Edit_Text_First);
+        editText = findViewById(R.id.Edit_Text_First);
     }
 
     private void clickListener() {
